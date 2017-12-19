@@ -41,4 +41,3 @@ int32_t menu()
 	scanf("%d", &option, 1);
 	return option;
 }
-
