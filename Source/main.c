@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "libAssert.h"
+#include "types_examples.h"
 
 // --- Function Prototypes ---
 int32_t menu();
@@ -13,13 +13,9 @@ int32_t menu();
  */
 int32_t main()
 {
-	char * msg;
 	int32_t choice = menu();
 	// do something with selected menu
-	
-	msg = "no way";
-	(void)assert_success(1, 0, msg);
-	printf("%d", choice);
+	runAllTypesExamples();	
 	return 0;
 }
 

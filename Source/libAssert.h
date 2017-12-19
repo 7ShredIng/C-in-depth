@@ -3,6 +3,9 @@
  *
  *
  */
+#ifndef LIB_ASSERT_H
+#define LIB_ASSERT_H
+#pragma once
 
 #include <stdint.h>
 #include <string.h>
@@ -18,3 +21,5 @@
  * @param[out] returns SUCCESS or ERROR.
  */
 int32_t assert_success(int i1, int i2, char *msg);
+
+#endif
