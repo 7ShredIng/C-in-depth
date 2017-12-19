@@ -3,15 +3,17 @@
 
 #include "libAssert.h"
 
-int32_t assert_success(int i1, int i2, char * msg)
+int32_t assert_success(int ret, char * msg)
 {
-	if(i1 != i2)
+    if(strlen(msg) != 0)
+    {
+        printf(msg);
+    }
+    
+	if(ret < 0)
 	{
-        if(strlen(msg) != 0)
-        {
-            printf(msg);
-        }
-		printf("ERROR: %d != %d\n", i1, i2);
+
+		printf("ERROR: \n");
 		return ERROR;
 	}
 	return  SUCCESS;

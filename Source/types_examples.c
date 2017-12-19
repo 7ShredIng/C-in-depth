@@ -4,12 +4,10 @@
 void runAllTypesExamples()
 {
 	char * msg;
-	testVariableNames();
-	testDataTypesAndSizes();
-	testConstants();
-
-	msg = "[Types] ";
-	(void)assert_success(1, 0, msg);
+    msg = "[types]";
+	(void)assert_success(testVariableNames(), msg);
+	(void)assert_success(testDataTypesAndSizes(), msg);
+	(void)assert_success(testConstants(), msg);
 }
 
 int32_t testVariableNames()

@@ -15,6 +15,7 @@ int32_t main()
 {
 	int32_t choice = menu();
 	// do something with selected menu
+    // TODO switch-case for all sub example tests.
 	runAllTypesExamples();	
 	return 0;
 }
